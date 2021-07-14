@@ -21,7 +21,10 @@ a {
 img {
   width: 100%;
 }
-
+:root {
+  --btn-color: #e02c6d;
+  /* --btn-color: green; */
+}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -67,9 +70,6 @@ img {
   transition: all 0.5s ease;
 }
 
-.menubar nav ul li a:hover {
-  color: #e02c6d;
-}
 .login-btn {
   text-align: center;
   margin-right: 0;
@@ -77,7 +77,7 @@ img {
 .login-btn a {
   color: #fff;
   padding: 15px 40px;
-  background-color: #e02c6d;
+  background-color: var(--btn-color);
 }
 .login-btn a i {
   margin-right: 10px;
@@ -98,12 +98,12 @@ img {
 .left-side h2 {
   color: #dddddd;
   margin-bottom: 50px;
-  font-size: 3em;
+  font-size: 64px;
 }
 .left-side a {
   color: #fff;
   padding: 15px 40px;
-  background-color: #e02c6d;
+  background-color: var(--btn-color);
   transition: 0.5s;
   position: relative;
 }
@@ -196,7 +196,7 @@ img {
 .highlight-text a {
   color: #fff;
   padding: 15px 40px;
-  background-color: #e02c6d;
+  background-color: var(--btn-color);
 }
 .highlight-text a i {
   margin-left: 10px;
@@ -219,7 +219,7 @@ img {
   padding-left: 20px;
 }
 .blog-title h2 span {
-  color: #b60445;
+  color: var(--btn-color);
 }
 .blog-title h2::before {
   position: absolute;
@@ -265,7 +265,7 @@ img {
   transition: 0.2s;
 }
 .singel-blog article h3:hover {
-  color: #b60445;
+  color: var(--btn-color);
 }
 .singel-blog article p {
   padding: 15px 0;
@@ -275,7 +275,7 @@ img {
   padding-right: 15px;
 }
 .singel-blog article a {
-  color: #e02c6d;
+  color: var(--btn-color);
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -385,7 +385,7 @@ img {
 
 .sbuscribe-input input:last-child {
   cursor: pointer;
-  background-color: #b60445;
+  background-color: var(--btn-color);
   color: #dddddd;
 }
 
@@ -499,13 +499,18 @@ img {
     display: block;
     padding-top: 0px;
   }
+  .left-side h2 {
+    font-size: 2.5rem;
+  }
   .highlight-area {
     grid-template-columns: repeat(1, 1fr);
   }
   .bottom-header {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .singel-footbaler .detailes h2 {
+    font-size: 1.5rem;
+  }
   .team-inner {
     grid-template-columns: repeat(1, 1fr);
   }
