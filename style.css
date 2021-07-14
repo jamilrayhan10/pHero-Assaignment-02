@@ -511,6 +511,7 @@ img {
   .singel-footbaler .detailes h2 {
     font-size: 1.5rem;
   }
+
   .team-inner {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -535,6 +536,9 @@ img {
     text-align: center;
     margin: 0 auto;
     display: block;
+  }
+  .subscribe-area h2 {
+    font-size: 1.5rem;
   }
   .top-footballer-area {
     grid-template-columns: repeat(1, 1fr);
